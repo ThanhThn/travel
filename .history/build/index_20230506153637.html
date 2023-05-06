@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1e9820e74f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../build/css/style.css">
+    <link rel="stylesheet" href="../build/css/font.css">
+    <link rel="preload" href="../img/profile2.png" as="image">
+    <link rel="preload" href="../img/profile3.png" as="image">
+    <link rel="preload" href="../img/profile4.png" as="image">
+</head>
+<body>
+    <header class="mx-14 my-5 relative flex justify-between items-center ">
+        <div before="" class="relative w-10 h-10 bg-green-500 rounded-full before:content-[attr(before)] before:absolute before:bg-orange-600 before:rounded-full before:inset-2 before:border-4"></div>
+        <div before="" id="nav" class="invisible lg:visible absolute lg:relative top-full -right-7 mt-4 pt-3 lg:p-0 lg:mt-0 max-w- lg:max-w-full  rounded-3xl lg:rounded-none bg-white shadow-lg lg:shadow-none ring-1 lg:ring-0 ring-gray-900/5 ab_menu">
+            <ul class="text-gray-400 flex flex-col lg:flex-row gap-x-10 items-center">
+                <li class="item_menu"><a href="#home">Home</a>
+                </li>
+                <li class="item_menu"><a href="#des">Destinations</a>
+                </li>
+                <li class="item_menu"><a href="#about">About</a>
+                </li>
+                <li class="item_menu"><a href="#part">Partner</a>
+                </li>
+                <div class="flex lg:gap-x-10">
+                    <button class=" px-12 lg:m-0 lg:px-10 py-3 bg-white text-orange-600 border-orange-600 border rounded-bl-3xl lg:rounded-lg hover:bg-orange-600 hover:text-white transition-colors">Login</button>
+                    <button class="lg:m-0 px-10 py-3 text-white bg-orange-600 rounded-br-3xl lg:rounded-lg border-orange-600 border hover:text-orange-600 hover:bg-white transition-colors">Register</button>
+                </div>
+            </ul>
+        </div>
+        <div id="menu-btn" class="relative flex justify-center items-center w-10 h-10 lg:hidden">
+            <i class="visible absolute fa-solid fa-bars text-xl cursor-pointer"></i>
+            <i class="invisible absolute fa-solid fa-xmark text-xl cursor-pointer"></i>
+        </div>
+    </header>
+    <div>
+        <div class="my-20 mx-10 grid-content lg:mx-28 lg:gap-x-16">
+            <div>
+                <h1 class="font-header text-4xl md:text-7xl my-14">Explore and Travel</h1>
+                <h3 class="mb-8 font-semibold">Holiday finder</h3>
+                <hr class="w-10 h-1  rounded-full bg-black">
+                <div class="my-10 grid grid-cols-2 gap-6">
+                    <div class="select">
+                        <button class="py-3 px-2 md:pl-10 md:pr-3 text-sm md:text-base relative flex justify-between items-center border rounded-lg w-full outline-none focus:outline-orange-600 focus:border-none group">
+                            <p class="text-left group-focus:text-orange-600 ">Select Location</p>
+                            <i class="fa-solid fa-angle-down group-focus:text-orange-600"></i>
+                            <div class="mt-2 absolute top-full left-0 border hidden w-full bg-white rounded-lg z-10 group-focus:block group-focus:animate-enter">
+                                <ul class="text-left">
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Location</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Location</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Location</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Location</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="select">
+                        <button class="py-3 px-2 md:pl-10 md:pr-3 text-sm md:text-base relative flex justify-between items-center border rounded-lg w-full outline-none focus:outline-orange-600 focus:border-none group">
+                            <p class="text-left group-focus:text-orange-600">Select Activity</p>
+                            <i class="fa-solid fa-angle-down group-focus:text-orange-600"></i>
+                            <div class="mt-2 absolute top-full left-0 border hidden w-full bg-white rounded-lg z-10 group-focus:block group-focus:animate-enter ">
+                                <ul class="text-left">
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Activity</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Activity</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Activity</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Activity</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="select">
+                        <button class="py-3 px-2 md:pl-10 md:pr-3 text-sm md:text-base relative flex justify-between items-center border rounded-lg w-full outline-none focus:outline-orange-600 focus:border-none group">
+                            <p class="text-left group-focus:text-orange-600">Select Grade</p>
+                            <i class="fa-solid fa-angle-down group-focus:text-orange-600"></i>
+                            <div class="mt-2 absolute top-full left-0 border hidden w-full bg-white rounded-lg z-10 group-focus:block group-focus:animate-enter">
+                                <ul class="text-left">
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Grade</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Grade</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Grade</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Grade</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="select">
+                        <button class="py-3 px-2 md:pl-10 md:pr-3 text-sm md:text-base relative flex justify-between items-center border rounded-lg w-full outline-none focus:outline-orange-600 focus:border-none group">
+                            <p class="text-left group-focus:text-orange-600">Select Date</p>
+                            <i class="fa-solid fa-angle-down group-focus:text-orange-600"></i>
+                            <div class="mt-2 absolute top-full left-0 border hidden w-full bg-white rounded-lg z-10 group-focus:block group-focus:animate-enter">
+                                <ul class="text-left">
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Date</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Date</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Date</li>
+                                    <li class="py-3 px-2 md:pl-10 md:pr-3 hover:bg-orange-600 hover:text-white rounded-lg">Date</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <button class="px-10 py-3 text-sm md:text-base text-white bg-orange-600 rounded-lg
+            border-orange-600 border
+            hover:text-orange-600
+            hover:bg-white transition-all">Explore</button>
+            </div>
+            <img src="../img/thousand-01 2.png" alt="" class="hidden lg:block lg:max-w-prose">
+        </div>
+        <div class="flex flex-col items-center grid-content lg:mx-28 lg:my-20 lg:gap-x-16 ">
+            <img src="../img/Thousand-02 1.png" alt="" srcset="" class="w-3/4 md:w-fit">
+            <div class="flex flex-col items-center lg:block">
+                <h3 class="font-header text-xl md:text-3xl lg:text-5xl font-semibold">A new way to explore the world</h3>
+                <p class="text-center max-w-sm md:max-w-3xl text-gray-500 my-5 lg:text-left lg:max-w-none">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                <button class="my-5 px-6 py-2 text-sm text-white bg-orange-600 rounded-lg
+            border-orange-600 border
+            hover:text-orange-600 hover:bg-white transition-colors md:px-10 md:py-3 md:text-base">Learn more</button>
+            </div>
+        </div>
+        <div class="my-20 mx-10 lg:mx-28">
+            <div class="flex items-end justify-between">
+                <h3 class="font-header text-xl md:text-3xl lg:text-5xl font-semibold">Featured destinations</h3>
+                <h6 class="text-orange-600 text-xs lg:text-lg hover:opacity-60 font-semibold cursor-pointer">View all <i class="fa-solid fa-angle-right"></i></h6>
+            </div>
+            <div class="grid grid-cols-2 justify-items-center w-full gap-5 lg:flex justify-center my-10 group">
+                <div class="relative lg:group-hover:blur-sm lg:hover:!blur-none lg:group-hover:scale-90 lg:hover:!scale-100 transition-all">
+                    <img class="rounded-lg" src="../img/travel/image 4.png" alt="">
+                    <div class="py-1 absolute scale-90 w-full text-center h-fit bottom-0 left-0 border rounded-lg bg-white text-black md:w-1/2 md:border-none md:rounded-none md:rounded-tr-lg md:text-left md:pt-3 md:pb-0 md:scale-100">
+                        <h4 class="text-sm md:text-base font-semibold">Raja Ampat</h4>
+                        <h6 class="text-gray-400 text-xs">Indonesia</h6>
+                    </div>
+                </div>
+                <div class="relative lg:group-hover:blur-sm lg:hover:!blur-none lg:group-hover:scale-90 lg:hover:!scale-100 transition-all">
+                    <img class="rounded-lg" src="../img/travel/image 3.png" alt="">
+                    <div class="py-1 absolute scale-90 w-full text-center h-fit bottom-0 left-0 border rounded-lg bg-white text-black md:w-1/2 md:border-none md:rounded-none md:rounded-tr-lg md:text-left md:pt-3 md:pb-0 md:scale-100">
+                        <h4 class="text-sm md:text-base  font-semibold">Fanjingshan</h4>
+                        <h6 class="text-gray-400 text-xs">China</h6>
+
+                    </div>
+                </div>
+                <div class="relative lg:group-hover:blur-sm lg:hover:!blur-none lg:group-hover:scale-90 lg:hover:!scale-100 transition-all">
+                    <img class="rounded-lg" src="../img/travel/image 2.png" alt="">
+                    <div class="py-1 absolute scale-90 w-full text-center h-fit bottom-0 left-0 border rounded-lg bg-white text-black md:w-1/2 md:border-none md:rounded-none md:rounded-tr-lg md:text-left md:pt-3 md:pb-0 md:scale-100">
+                        <h4 class="text-sm md:text-base font-semibold">Vevery</h4>
+                        <h6 class="text-gray-400 text-xs">Switzerland</h6>
+                    </div>
+                </div>
+                <div class="relative lg:group-hover:blur-sm lg:hover:!blur-none lg:group-hover:scale-90 lg:hover:!scale-100 transition-all">
+                    <img class="rounded-lg" src="../img/travel/image 1.png" alt="">
+                    <div class="py-1 absolute scale-90 w-full text-center h-fit bottom-0 left-0 border rounded-lg bg-white text-black md:w-1/2 md:border-none md:rounded-none md:rounded-tr-lg md:text-left md:pt-3 md:pb-0 md:scale-100">
+                        <h4 class="text-sm md:text-base font-semibold">Skadar</h4>
+                        <h6 class="text-gray-400 text-xs">Montenegro</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center grid-content lg:mx-28 lg:my-20 lg:gap-x-16">
+            <div class="flex flex-col pt-3 order-2 lg:order-1 items-center lg:block lg:p-0">
+                <h3 class="font-header text-xl md:text-3xl lg:text-5xl font-semibold">Guides by Thousand Sunny</h3>
+                <p class="text-center max-w-sm md:max-w-3xl text-gray-500 my-5 lg:text-left lg:max-w-none">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+                <button class="my-5 px-6 py-2 text-sm text-white bg-orange-600 rounded-lg
+                border-orange-600 border
+                hover:text-orange-600 hover:bg-white transition-colors md:px-10 md:py-3 md:text-base">Download</button>
+            </div>
+            <img src="../img/Thousand-03.png" alt="" srcset="" class="w-3/4 order-1 md:w-fit lg:order-2">
+        </div>
+        <div class="my-20 mx-10 lg:mx-28">
+            <h3 class="font-header text-xl md:text-3xl lg:text-5xl font-semibold">Testimonials</h3>
+            <div class="grid md:grid-cols-2 my-10 gap-x-10 items-center justify-items-center text-lg">
+                <div class="flex md:block items-center flex-col">
+                    <div class="w-28 flex justify-between gap-x-1">
+                        <div>
+                            <i class="fa-regular fa-star text-gray-400 transition-all"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star text-gray-400 transition-all"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star text-gray-400 transition-all"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star text-gray-400 transition-all"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star text-gray-400 transition-all"></i>
+                        </div>
+                    </div>
+                    <div id="content" class="flex items-center flex-col md:block text-center text-base md:text-lg md:text-left"></div>
+                </div>
+                <div id="change" class="relative flex justify-center md:block">
+                    <div id="btn-container" class="invisible bg-white w-1/3 h-14 absolute bottom-0 right-0 rounded-tl-lg flex justify-center items-center gap-2 md:visible">
+                        <button id="btn-left" class="border-2 rounded-full w-10 h-10 border-black transition-all">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button id="btn-right" class="border-2 rounded-full w-10 h-10 border-black transition-all">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative my-20 mx-10 lg:mx-28">
+            <div class="flex items-end justify-between">
+                <h3 class="font-header text-xl md:text-3xl lg:text-5xl font-semibold">Trending stories</h3>
+                <h6 class="text-orange-600 text-xs lg:text-lg hover:opacity-60 font-semibold cursor-pointer">View all <i class="fa-solid fa-angle-right"></i></h6>
+            </div>
+            <div id="story" class="w-full flex gap-x-6 overflow-x-auto md:overflow-visible my-20 mx-auto md:max-w-5xl justify-items-center snap-x snap-proximity">
+                <div class="relative md:hover:-translate-y-4 transition-all w-fit snap-start">
+                    <div class="w-[81vw] md:w-fit md:h-44 lg:h-64">
+                        <img class="w-full h-full object-fill rounded-t-md" src="../img/trending/trending-1.jpg" alt="">
+                    </div>
+                    <div class="my-2 mr-2">
+                        <h5 class="font-semibold md:text-base lg:text-xl">The many benefits of taking a healing holiday</h5>
+                        <p class="text-gray-500 my-4">'Helaing holiday' are on the rise tohelp maximise your health and happines...</p>
+                        <span class="text-orange-600 font-semibold hover:opacity-60 cursor-pointer">Read more</span>
+                    </div>
+                </div>
+                <div class="relative md:hover:-translate-y-4 transition-all w-fit snap-start">
+                    <div class="w-[81vw] md:w-fit md:h-44 lg:h-64">
+                        <img class="w-full h-full object-fill rounded-t-md" src="../img/trending/trending-1.jpg" alt="">
+                    </div>
+                    <div class="my-2 mr-2">
+                        <h5 class="font-semibold md:text-base lg:text-xl">The many benefits of taking a healing holiday</h5>
+                        <p class="text-gray-500 my-4">'Helaing holiday' are on the rise tohelp maximise your health and happines...</p>
+                        <span class="text-orange-600 font-semibold hover:opacity-60 cursor-pointer">Read more</span>
+                    </div>
+                </div>
+                <div class="relative md:hover:-translate-y-4 transition-all w-fit snap-start">
+                    <div class="w-[81vw] md:w-fit md:h-44 lg:h-64">
+                        <img class="w-full h-full object-fill rounded-t-md" src="../img/trending/trending-1.jpg" alt="">
+                    </div>
+                    <div class="my-2 mr-2">
+                        <h5 class="font-semibold md:text-base lg:text-xl">The many benefits of taking a healing holiday</h5>
+                        <p class="text-gray-500 my-4">'Helaing holiday' are on the rise tohelp maximise your health and happines...</p>
+                        <span class="text-orange-600 font-semibold hover:opacity-60 cursor-pointer">Read more</span>
+                    </div>
+                </div>
+                <div class="relative md:hover:-translate-y-4 transition-all w-fit snap-start">
+                    <div class="w-[81vw] md:w-fit md:h-44 lg:h-64">
+                        <img class="w-full h-full object-fill rounded-t-md" src="../img/trending/trending-1.jpg" alt="">
+                    </div>
+                    <div class="my-2 mr-2">
+                        <h5 class="font-semibold md:text-base lg:text-xl ">The many benefits of taking a healing holiday</h5>
+                        <p class="text-gray-500 my-4">'Helaing holiday' are on the rise tohelp maximise your health and happines...</p>
+                        <span class="text-orange-600 font-semibold hover:opacity-60 cursor-pointer">Read more</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 flex justify-center md:my-0">
+        <div class="max-w-sm md:max-w-2xl lg:max-w-5xl">
+            <div class="my-10 grid grid-cols-6 auto-grid-rows lg:grid-rows-1 justify-center gap-x-4">
+                <div class="col-span-6 row-start-2 lg:col-span-3 lg:row-start-1 text-xs md:text-base">
+                    <div before="" class="w-10 h-10 bg-green-500 rounded-full  relative before:content-[attr(before)] before:absolute before:bg-orange-600 before:rounded-full before:inset-2 before:border-4 hidden lg:block"></div>
+                    <div class="mt-5 text-gray-500">
+                        <p>Plan and book your perfect trip with expert advice, travel tips destination information from us</p>
+                        <div class="mt-6">©2020 Thousand Sunny. All rights reserved</div>
+                    </div>
+                </div>
+                <div class="col-span-2 lg:col-span-1 text-xs md:text-base">
+                    <b>Destinations</b>
+                    <ul class="mt-4 text-gray-500">
+                        <li>Africa</li>
+                        <li>Antarctica</li>
+                        <li>Asia</li>
+                        <li>Europe</li>
+                        <li>America</li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1 text-xs md:text-base">
+                    <b>Shop</b>
+                    <ul class="mt-4 text-gray-500">
+                        <li>Destination Guides</li>
+                        <li>Pictorial & Gifts</li>
+                        <li>Special Offers</li>
+                        <li>Delivery Times</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1 text-xs md:text-base">
+                    <b>Interests</b>
+                    <ul class="mt-4 text-gray-500">
+                        <li>Adventure Travel</li>
+                        <li>Art And Culture</li>
+                        <li>Wildlife And Nature</li>
+                        <li>Family Holidays</li>
+                        <li>Food And Drink</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-gray-200 h-[2px]">
+            <div class="my-5 flex justify-center md:text-xl lg:text-2xl gap-x-4">
+                <a href="#" class="hover:opacity-60 transition-opacity"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:opacity-60 transition-opacity"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:opacity-60 transition-opacity"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:opacity-60 transition-opacity"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:opacity-60 transition-opacity"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../build/script.js"></script>
+</body>
+</html>

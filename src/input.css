@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.star{
+    @apply text-yellow-400
+}
+.btn{
+    @apply text-gray-300 border-gray-300
+}
+.font-bolder{
+    @apply font-bold
+}
+.grid-content{
+    @apply lg:grid lg:grid-cols-2 lg:justify-items-center
+}
+.ab_menu{
+    @apply before:content-[attr(before)] before:absolute before:bg-white before:-top-2 before:right-10 before:w-4 before:h-4 before:rotate-45 before:shadow-xl before:-z-10 before:ring-1  before:ring-gray-900/5 lg:before:content-none after:content-[attr(before)] after:absolute after:-top-[1.5px] after:right-[37.5px] after:bg-white after:w-[21px] after:h-[3px] after:rounded-full lg:after:content-none
+}
+.item_menu{
+    @apply w-full py-3 text-center hover:bg-slate-100 lg:hover:bg-transparent hover:text-black hover:rounded-xl hover:text-xl lg:hover:text-base hover:font-bold lg:hover:font-normal transition-colors
+}
